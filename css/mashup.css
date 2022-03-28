@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Ang-Regular";
-    src:  url('fonts/ang-webfont.woff') format('woff');
+    src:  url('../fonts/ang-webfont.woff') format('woff');
 }
 
 @font-face {
     font-family: "MinionPro-Regular";
-    src:  url('fonts/MinionPro-Regular.woff') format('woff');
+    src:  url('../fonts/MinionPro-Regular.woff') format('woff');
 }
 
 *,
@@ -39,6 +39,7 @@ body {
     /* background: red; */
     color: black;
     padding: 2rem;
+
 }
 
 .numbers {
@@ -78,6 +79,7 @@ body {
     float: left;
     width: 33.3%;
     text-align: center;
+    /* background: yellow; */
 }
 
 .item1 {
@@ -88,84 +90,96 @@ body {
     text-align: right;
 }
 
-/* --------- CAROUSEL ---------*/
-.carousel > li,ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
+/* --------- MASHUP PAGE --------- */
 
-.carousel {
-    /* background: pink; */
-    width: 100%;
-    height: 85vh;
-    position: relative;
+
+.mashup-container {
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 1rem;
 }
 
-.slide {
+.mashup-overlay {
+    /* margin: 0.3em; */
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    flex-grow: 1;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 5;
     position: absolute;
-    inset: 0;
     opacity: 0;
+    --mask:
+      linear-gradient(#000 0 0) center/calc(100% - 1.4rem) calc(100% - 1.4rem) no-repeat,
+      conic-gradient(from 135deg at top,#0000,#000 1deg 89deg,#0000 90deg) 0 0/1.4rem 0.7rem space no-repeat,
+      conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 0 100%/1.4rem 0.7rem space no-repeat,
+      conic-gradient(from 45deg at left,#0000,#000 1deg 89deg,#0000 90deg) 0 0/0.7rem 1.4rem no-repeat space,
+      conic-gradient(from -135deg at right,#0000,#000 1deg 89deg,#0000 90deg) 100% 0/0.7rem 1.4rem no-repeat space;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
 }
 
-.slide[data-active] {
+.mashup-overlay:hover {
     opacity: 1;
 }
 
-.slide > img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: scale-down;
-}
-
-.caption {
-    margin: auto;
-    max-width: 70rem;
-    margin: 1rem auto 0;
-    text-align: center;
-}
-
-.caption a {
-    text-decoration: none;
-    color: black;
-    z-index: 400;
-    /* background: yellow; */
-}
-
-.carousel-button {
-    position: absolute;
-    z-index: 2;
-    background: none;
-    border: none;
-    font-size: 4rem;
-    top: 50%;
-    translateY(-50%);
-    color: rgba(222,255,121, 0.9);
-    cursor: pointer;
-}
-
-.carousel-button:hover,
-.carousel-button:focus {
-    color: #DEFF79;
-}
-
-.carousel-button:focus {
-    outline: 1px solid red;
-}
-
-.carousel-button.left {
-    left: 1vw;
-}
-
-.carousel-button.right {
-    right: 1vw;
-}
-
-.caption {
+.mashup-item {
+    /* background-image: url("../img/carpet3.jpg"); */
+    /* border-radius: 10px; */
+    /* background-size: cover; */
+    /* background-position: center; */
+    margin: 0.3em;
+    height: 20em;
+    width: 20em;
+    flex-grow: 1;
     position: relative;
 }
+
+.mashup-item:nth-child(2n),
+.mashup-overlay:nth-child(2n) {
+    width: 14em;
+}
+
+.mashup-item:nth-child(4n),
+.mashup-overlay:nth-child(4n) {
+    width: 16em;
+}
+
+.mashup-item:nth-child(5n),
+.mashup-overlay:nth-child(5n) {
+    width: 17em;
+}
+
+.mashup-item:nth-child(6n),
+.mashup-overlay:nth-child(6n) {
+    width: 20em;
+}
+
+.mashup-item:nth-child(9n),
+.mashup-overlay:nth-child(9n) {
+    width: 14em;
+}
+
+.mashup-item:nth-child(12n),
+.mashup-overlay:nth-child(12n) {
+    width: 16em;
+}
+
+.mashup-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    --mask:
+      linear-gradient(#000 0 0) center/calc(100% - 1.4rem) calc(100% - 1.4rem) no-repeat,
+      conic-gradient(from 135deg at top,#0000,#000 1deg 89deg,#0000 90deg) 0 0/1.4rem 0.7rem space no-repeat,
+      conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 0 100%/1.4rem 0.7rem space no-repeat,
+      conic-gradient(from 45deg at left,#0000,#000 1deg 89deg,#0000 90deg) 0 0/0.7rem 1.4rem no-repeat space,
+      conic-gradient(from -135deg at right,#0000,#000 1deg 89deg,#0000 90deg) 100% 0/0.7rem 1.4rem no-repeat space;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+}
+
 
 /*--------- INDEX ---------*/
 .index {
@@ -238,57 +252,4 @@ body {
 .projects a {
     text-decoration: none;
     color: black;
-}
-
-/* --------- ABOUT --------- */
-.about {
-    margin: 15rem 3rem 5rem;
-}
-
-.main {
-    margin-top: 5rem;
-}
-
-.about p {
-    word-spacing: 3;
-}
-
-.main p {
-    margin-top: 1.5rem;
-}
-
-.exhibitions p {
-    font-size: 1rem;
-    margin-left: 1vw;
-    margin-top: 2rem;
-}
-
-/* --------- PROJECT PAGE --------- */
-
-.project-overview {
-    padding-top: 10vh;
-    padding-bottom: 5rem;
-}
-
-.tags {
-    display: flex;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    padding-left: 6vw;
-    background-color: white;
-    width: 100%;
-}
-
-.tags1 {
-    width: 13%;
-}
-
-.tags2 {
-    width: 77%;
-}
-
-.tags p {
-    font-size: 1rem;
-    word-spacing: 3;
 }
