@@ -241,12 +241,19 @@ body {
 }
 
 /* --------- ABOUT --------- */
+/* .resume {
+    margin: 5rem 0 0 2rem;
+} */
+
 .about {
     margin: 15rem 3rem 5rem;
 }
 
 .main {
     margin-top: 5rem;
+    margin-bottom: 5rem;
+    width: 60%;
+    margin-left: 5rem;
 }
 
 .about p {
