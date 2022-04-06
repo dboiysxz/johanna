@@ -299,3 +299,8 @@ body {
     font-size: 1rem;
     word-spacing: 3;
 }
+
+/* --------- MASHUP PAGE --------- */
+.lb-caption {
+    font-family: 'Heebo', sans-serif;
+}
