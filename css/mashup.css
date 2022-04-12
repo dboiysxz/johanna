@@ -253,3 +253,10 @@ body {
     text-decoration: none;
     color: black;
 }
+
+/* --------- LIGHTBOX OVERWRITE --------- */
+
+
+.lb-number {
+    display: none;
+}

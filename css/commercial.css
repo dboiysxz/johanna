@@ -24,7 +24,6 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background: pink;
 }
 
 body {
@@ -62,16 +61,51 @@ body {
 /* --------- COMMERCIAL PAGE --------- */
 
 .grid-container {
+    margin: 0 auto;
+}
+
+.grid-wrapper {
+    margin: 0 auto;
     width: 100%;
+    max-width: 1480px;
     display: flex;
     flex-wrap: wrap;
 }
 
 .grid-item {
     width: 33.3%;
-    padding: 3rem;
+    padding: 2rem;
 }
 
-.grid-item img {
+.grid-item--inner {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-family: "Ang-Regular", Arial, sans-serif;
+    font-weight: Regular;
+    letter-spacing: 1.6;
+    text-align: center;
+}
+
+.grid-item .portfolio-image {
     width: 100%;
+    padding: 33% 0;
+    margin-bottom: 0.7rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.portfolio-title {
+    font-size: 1rem;
+    letter-spacing: 1.6;
+    line-height: 1rem;
+    font-weight: normal;
+}
+
+/* --------- LIGHTBOX OVERWRITE --------- */
+
+
+.lb-number {
+    display: none;
 }

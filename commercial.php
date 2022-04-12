@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap" rel="stylesheet">
 
-
+    <link rel="stylesheet" href="./css/lightbox.css"/>
     <link rel="stylesheet" href="./css/commercial.css"/>
     <script src="./script.js" defer></script>
 </head>
@@ -21,49 +21,115 @@
                 <a href="./#about">johanna ulfsak</a>
             </div>
     </section>
-    <section class="grid-container">
+    <section class="grid-container portfolio">
+        <div class="grid-wrapper">
             <div class="grid-item">
-                <a href="img/Carpet 1_jpeg.jpg" data-lightbox="carpet image :)" data-caption="Caption1">
+                <a class="grid-item--inner" href="img/Carpet 1_jpeg.jpg" data-lightbox="carpet image :)" data-title="Caption1">
                     <div class="grid-overlay"></div>
-                    <img src="img/Carpet 1_jpeg.jpg" alt="carpet3">
+                    <div class="portfolio-image" style="background-image: url('img/_DSD9279.jpg')" alt="_DSD9279"></div>
+                    <h2 class="portfolio-title">Hand-spun Himalayan wool, silk</h2>
                 </a>
             </div>
             <div class="grid-item">
-                <a href="img/Carpet 1_jpeg.jpg" data-lightbox="carpet image :)" data-caption="Caption1">
+                <a class="grid-item--inner" href="img/Carpet 1_jpeg.jpg" data-lightbox="carpet image :)" data-title="Caption1">
                     <div class="grid-overlay"></div>
-                    <img src="img/Carpet 1_jpeg.jpg" alt="carpet3">
+                    <div class="portfolio-image" style="background-image: url('img/_DSD9279.jpg')" alt="_DSD9279"></div>
+                    <h2 class="portfolio-title">Hand-spun Himalayan wool, silk</h2>
                 </a>
             </div>
             <div class="grid-item">
-                <a href="img/Carpet 1_jpeg.jpg" data-lightbox="carpet image :)" data-caption="Caption1">
+                <a class="grid-item--inner" href="img/Carpet 1_jpeg.jpg" data-lightbox="carpet image :)" data-title="Caption1">
                     <div class="grid-overlay"></div>
-                    <img src="img/Carpet 1_jpeg.jpg" alt="carpet3">
+                    <div class="portfolio-image" style="background-image: url('img/_DSD9279.jpg')" alt="_DSD9279"></div>
+                    <h2 class="portfolio-title">Hand-spun Himalayan wool, silk</h2>
                 </a>
             </div>
             <div class="grid-item">
-                <a href="img/Carpet 1_jpeg.jpg" data-lightbox="carpet image :)" data-caption="Caption1">
+                <a class="grid-item--inner" href="img/Carpet 1_jpeg.jpg" data-lightbox="carpet image :)" data-title="Caption1">
                     <div class="grid-overlay"></div>
-                    <img src="img/Carpet 1_jpeg.jpg" alt="carpet3">
+                    <div class="portfolio-image" style="background-image: url('img/_DSD9279.jpg')" alt="_DSD9279"></div>
+                    <h2 class="portfolio-title">Hand-spun Himalayan wool, silk</h2>
                 </a>
             </div>
             <div class="grid-item">
-                <a href="img/Carpet 1_jpeg.jpg" data-lightbox="carpet image :)" data-caption="Caption1">
+                <a class="grid-item--inner" href="img/Carpet 1_jpeg.jpg" data-lightbox="carpet image :)" data-title="Caption1">
                     <div class="grid-overlay"></div>
-                    <img src="img/Carpet 1_jpeg.jpg" alt="carpet3">
+                    <div class="portfolio-image" style="background-image: url('img/_DSD9279.jpg')" alt="_DSD9279"></div>
+                    <h2 class="portfolio-title">Hand-spun Himalayan wool, silk</h2>
                 </a>
             </div>
             <div class="grid-item">
-                <a href="img/Carpet 1_jpeg.jpg" data-lightbox="carpet image :)" data-caption="Caption1">
+                <a class="grid-item--inner" href="img/Carpet 1_jpeg.jpg" data-lightbox="carpet image :)" data-title="Caption1">
                     <div class="grid-overlay"></div>
-                    <img src="img/Carpet 1_jpeg.jpg" alt="carpet3">
+                    <div class="portfolio-image" style="background-image: url('img/_DSD9279.jpg')" alt="_DSD9279"></div>
+                    <h2 class="portfolio-title">Hand-spun Himalayan wool, silk</h2>
                 </a>
             </div>
             <div class="grid-item">
-                <a href="img/Carpet 1_jpeg.jpg" data-lightbox="carpet image :)" data-caption="Caption1">
+                <a class="grid-item--inner" href="img/Carpet 1_jpeg.jpg" data-lightbox="carpet image :)" data-title="Caption1">
                     <div class="grid-overlay"></div>
-                    <img src="img/Carpet 1_jpeg.jpg" alt="carpet3">
+                    <div class="portfolio-image" style="background-image: url('img/_DSD9279.jpg')" alt="_DSD9279"></div>
+                    <h2 class="portfolio-title">Hand-spun Himalayan wool, silk</h2>
                 </a>
             </div>
+            <div class="grid-item">
+                <a class="grid-item--inner" href="img/Carpet 1_jpeg.jpg" data-lightbox="carpet image :)" data-title="Caption1">
+                    <div class="grid-overlay"></div>
+                    <div class="portfolio-image" style="background-image: url('img/_DSD9279.jpg')" alt="_DSD9279"></div>
+                    <h2 class="portfolio-title">Hand-spun Himalayan wool, silk</h2>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a class="grid-item--inner" href="img/Carpet 1_jpeg.jpg" data-lightbox="carpet image :)" data-title="Caption1">
+                    <div class="grid-overlay"></div>
+                    <div class="portfolio-image" style="background-image: url('img/_DSD9279.jpg')" alt="_DSD9279"></div>
+                    <h2 class="portfolio-title">Hand-spun Himalayan wool, silk</h2>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a class="grid-item--inner" href="img/Carpet 1_jpeg.jpg" data-lightbox="carpet image :)" data-title="Caption1">
+                    <div class="grid-overlay"></div>
+                    <div class="portfolio-image" style="background-image: url('img/_DSD9279.jpg')" alt="_DSD9279"></div>
+                    <h2 class="portfolio-title">Hand-spun Himalayan wool, silk</h2>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a class="grid-item--inner" href="img/Carpet 1_jpeg.jpg" data-lightbox="carpet image :)" data-title="Caption1">
+                    <div class="grid-overlay"></div>
+                    <div class="portfolio-image" style="background-image: url('img/_DSD9279.jpg')" alt="_DSD9279"></div>
+                    <h2 class="portfolio-title">Hand-spun Himalayan wool, silk</h2>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a class="grid-item--inner" href="img/Carpet 1_jpeg.jpg" data-lightbox="carpet image :)" data-title="Caption1">
+                    <div class="grid-overlay"></div>
+                    <div class="portfolio-image" style="background-image: url('img/_DSD9279.jpg')" alt="_DSD9279"></div>
+                    <h2 class="portfolio-title">Hand-spun Himalayan wool, silk</h2>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a class="grid-item--inner" href="img/Carpet 1_jpeg.jpg" data-lightbox="carpet image :)" data-title="Caption1">
+                    <div class="grid-overlay"></div>
+                    <div class="portfolio-image" style="background-image: url('img/_DSD9279.jpg')" alt="_DSD9279"></div>
+                    <h2 class="portfolio-title">Hand-spun Himalayan wool, silk</h2>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a class="grid-item--inner" href="img/Carpet 1_jpeg.jpg" data-lightbox="carpet image :)" data-title="Caption1">
+                    <div class="grid-overlay"></div>
+                    <div class="portfolio-image" style="background-image: url('img/_DSD9279.jpg')" alt="_DSD9279"></div>
+                    <h2 class="portfolio-title">Hand-spun Himalayan wool, silk</h2>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a class="grid-item--inner" href="img/Carpet 1_jpeg.jpg" data-lightbox="carpet image :)" data-title="Caption1">
+                    <div class="grid-overlay"></div>
+                    <div class="portfolio-image" style="background-image: url('img/_DSD9279.jpg')" alt="_DSD9279"></div>
+                    <h2 class="portfolio-title">Hand-spun Himalayan wool, silk</h2>
+                </a>
+            </div>
+        </div>
     </section>
+    <script src="./lightbox-plus-jquery.js"></script>
 </body>
 </html>

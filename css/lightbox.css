@@ -179,7 +179,7 @@ body.lb-disable-scrolling {
 }
 
 .lb-data .lb-number {
-  display: block;
+  display: none !important; 
   clear: left;
   padding-bottom: 1em;
   font-size: 12px;
