@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en-US
+name: johanna
+primary: true
+siteGroup: 851366e6-9280-4bf5-b2ae-ab3a7b60572b # johanna
+sortOrder: 1

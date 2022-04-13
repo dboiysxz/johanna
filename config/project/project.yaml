@@ -1,0 +1,22 @@
+dateModified: 1649864139
+email:
+  fromEmail: eva@j2nku.club
+  fromName: johanna
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    0e225a1c-80a5-4db6-9343-3ae185d662a6: johanna # johanna
+    851366e6-9280-4bf5-b2ae-ab3a7b60572b: johanna # johanna
+    17913697-6bb3-4006-a5cc-2296887d7e4b: Common # Common
+system:
+  edition: solo
+  live: true
+  name: johanna
+  schemaVersion: 3.7.33
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
