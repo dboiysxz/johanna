@@ -66,6 +66,7 @@ body {
 .navbar a {
     text-decoration: none;
     color: black;
+    letter-spacing: 0.05rem;
 }
 
 .navbar a:hover {
@@ -312,6 +313,7 @@ body {
 .projects a {
     text-decoration: none;
     color: black;
+    letter-spacing: 0.05rem;
 }
 
 /* --------- LIGHTBOX OVERWRITE --------- */

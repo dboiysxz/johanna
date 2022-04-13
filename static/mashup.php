@@ -77,7 +77,7 @@ include 'header.php';
                 </a>
             </div>
             <div class="mashup-item">
-                <a href="./img/carpet3.jpg" data-lightbox="carpet image :)" data-title="Caption1">
+                <a href="./img/Screenshot 2021-09-15 at 00.33.39.png" data-lightbox="carpet image :)" data-title="Caption1">
                     <div class="mashup-overlay"></div>
                     <img src="./img/Screenshot 2021-09-15 at 00.33.39.png" alt="carpet3">
                 </a>
