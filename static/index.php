@@ -6,13 +6,62 @@ include_once 'header.php';
  <?php
  include_once 'projectindex.php';
   ?>
+  <script src="./assets/js/magnifying-glass.js" type="text/javascript"></script>
 
     <!-- ---------------------------- CAROUSEL----------------------------- -->
 
-    <section aria-label="Selected Projects" class="gallery">
-        <div class="carousel" data-carousel>
+    <section aria-label="Selected Projects" class="gallery swiper-container">
+        <div class="swiper-wrapper carousel">
+            <div class="swiper-slide slide zoomable">
+                <div class="magnifying-glass"></div>
+                <div class="large"></div>
+                <img class="small" src="img/Photo29_28.jpg" alt="Photo29_28.jpg">
+                <div class="caption">
+                    <p>
+                        <a href="project.php">Cool Project</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide zoomable">
+                <div class="magnifying-glass"></div>
+                <img src="img/Photo29_28.jpg" alt="Photo29_28.jpg">
+                <div class="caption">
+                    <p>
+                        <a href="project.php">Cool Project</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide zoomable">
+                <div class="magnifying-glass"></div>
+                <img src="img/_DSD9279.jpg" alt="_DSD9279.jpg">
+                <div class="caption">
+                    <p>
+                        <a href="project.php">Cool Project</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide zoomable">
+                <div class="magnifying-glass"></div>
+                <img src="img/_DSD9279.jpg" alt="_DSD9279.jpg">
+                <div class="caption">
+                    <p>
+                        <a href="project.php">Cool Project</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <button class="carousel-button carousel-button-left left" data-carousel-button="left"><img src="./img/prev.png"></button>
+        <button class="carousel-button carousel-button-right right" data-carousel-button="right"><img src="./img/next.png"></button>
+
+        <!-- <div class="carousel" data-carousel>
             <button class="carousel-button left" data-carousel-button="left"><img src="./img/prev.png"></button>
             <button class="carousel-button right" data-carousel-button="right"><img src="./img/next.png"></button>
+            
+            
             <ul data-slides>
                 <li class="slide" data-active>
                     <img src="img/carpet3.jpg" alt="carpet3">
@@ -39,7 +88,7 @@ include_once 'header.php';
                     </div>
                 </li>
             </ul>
-        </div>
+        </div> -->
     </section>
 
 
@@ -88,6 +137,8 @@ include_once 'header.php';
         </p>
     </div>
 </section>
+
+
 
 </body>
 </html>
