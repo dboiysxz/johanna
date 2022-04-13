@@ -186,7 +186,7 @@ body {
 .projects {
     padding-top: 1.5rem;
     width: 95%;
-    height: 70%;
+    height: 28rem;
     background-color: rgba(222,255,121, 0.9);
     display: flex;
     flex-direction: column;
