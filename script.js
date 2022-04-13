@@ -14,6 +14,9 @@ buttons.forEach(button => {
 
         slides.children[newIndex].dataset.active = true
         delete activeSlide.dataset.active
+
+        var event = new Event('carousel-nav-button-clicked');
+        document.dispatchEvent(event);
     })
 })
 

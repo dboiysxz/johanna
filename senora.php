@@ -10,11 +10,12 @@ include_once 'header.php';
 
         <section aria-label="Selected Projects" class="gallery">
             <div class="carousel" data-carousel>
-                <button class="carousel-button left" data-carousel-button="left">&#8592;</button>
-                <button class="carousel-button right" data-carousel-button="right">&#8594;</button>
+                <button class="carousel-button left" data-carousel-button="left"><img src="./img/prev.png"> </button>
+                <button class="carousel-button right" data-carousel-button="right"><img src="./img/next.png"></button>
                 <ul data-slides>
                     <li class="slide" data-active>
-                        <img src="./img/senora_view1.png" alt="SEÑORA exhibion view no. 1">
+                        <div class="lens"></div>
+                        <img id="featured" src="./img/senora_view1.png" alt="SEÑORA exhibion view no. 1">
                         <div class="caption">
                             <p>
                                 SEÑORA exhibion view #<span class="numbers">1</span>
@@ -22,7 +23,8 @@ include_once 'header.php';
                         </div>
                     </li>
                     <li class="slide">
-                            <img src="./img/senora_view2.png" alt="SEÑORA exhibion view no. 2">
+                        <div class="lens"></div>
+                        <img src="./img/senora_view2.png" alt="SEÑORA exhibion view no. 2">
                         <div class="caption">
                             <p>
                                 SEÑORA exhibion view #<span class="numbers">2</span>
@@ -30,6 +32,7 @@ include_once 'header.php';
                         </div>
                     </li>
                     <li class="slide">
+                        <div class="lens"></div>
                         <img src="./img/senora_view3.png" alt="SEÑORA exhibion view no. 3">
                         <div class="caption">
                             <p>
@@ -79,5 +82,6 @@ include_once 'header.php';
             </div>
         </div>
         </section>
+        <script src="./zoom.js" defer></script>
     </body>
 </html>

@@ -11,8 +11,8 @@ include_once 'header.php';
 
     <section aria-label="Selected Projects" class="gallery">
         <div class="carousel" data-carousel>
-            <button class="carousel-button left" data-carousel-button="left">&#8592;</button>
-            <button class="carousel-button right" data-carousel-button="right">&#8594;</button>
+            <button class="carousel-button left" data-carousel-button="left"><img src="./img/prev.png"></button>
+            <button class="carousel-button right" data-carousel-button="right"><img src="./img/next.png"></button>
             <ul data-slides>
                 <li class="slide" data-active>
                     <img src="img/carpet3.jpg" alt="carpet3">

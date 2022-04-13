@@ -111,6 +111,7 @@ body {
 
 .slide[data-active] {
     opacity: 1;
+    z-index: 1;
 }
 
 .slide > img {
@@ -151,9 +152,9 @@ body {
     color: #DEFF79;
 }
 
-.carousel-button:focus {
+/* .carousel-button:focus {
     outline: 1px solid red;
-}
+} */
 
 .carousel-button.left {
     left: 1vw;
@@ -285,6 +286,7 @@ body {
     padding-left: 6vw;
     background-color: white;
     width: 100%;
+    z-index: 50;
 }
 
 .tags1 {
@@ -300,7 +302,23 @@ body {
     word-spacing: 3;
 }
 
+/* --------- PROJECT IMAGE ZOOM --------- */
+
+.lens {
+    width: 12rem;
+    height: 8rem;
+    border: 1px solid #DEFF79;
+    border-radius: 50%;
+    position: absolute;
+    display: none;
+}
+
+.slide[data-active] .lens {
+    display: block;
+}
+
 /* --------- MASHUP PAGE --------- */
+
 .lb-caption {
     font-family: 'Heebo', sans-serif;
 }
