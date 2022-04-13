@@ -60,25 +60,61 @@ include_once 'header.php';
             </p>
 
         </div>
-        <div class="tags">
-            <div class="tags1">
-                <p> year: <br>
-                    technique: <br>
-                    produced in: <br>
-                    materials: <br>
-                    size: <br>
-                    photo:
-                </p>
-            </div>
-            <div class="tags2">
-                    <p>
-                    <span class="numbers">2020</span><br>
-                    Tibetan Hand-knotting Hand-dyed in abrash technique quality: Approx 125.000 knots / sqm <br>
-                    Kathmandu, Nepal <br>
-                    Hand-spun Himalayan wool, silk <br>
-                    variable dimensions <br>
-                    Ankit Shakya
-                    </p>
+        <div class="tags-container">
+            <div class="tags">
+                <div class="tag-row">
+                    <div class="tag-title">
+                        year:
+                    </div>
+                    <div class="tag-content">
+                        2020
+                    </div>
+                </div>
+
+                <div class="tag-row">
+                    <div class="tag-title">
+                        technique:
+                    </div>
+                    <div class="tag-content">
+                        Tibetan Hand-knotting Hand-dyed in abrash technique quality: Approx 125.000 knots / sqm
+                    </div>
+                </div>
+
+                <div class="tag-row">
+                    <div class="tag-title">
+                        produced in:
+                    </div>
+                    <div class="tag-content">
+                        Kathmandu, Nepal
+                    </div>
+                </div>
+
+                <div class="tag-row">
+                    <div class="tag-title">
+                        materials:
+                    </div>
+                    <div class="tag-content">
+                        Hand-spun Himalayan wool, silk
+                    </div>
+                </div>
+
+                <div class="tag-row">
+                    <div class="tag-title">
+                        size:
+                    </div>
+                    <div class="tag-content">
+                        variable dimensions
+                    </div>
+                </div>
+
+                <div class="tag-row">
+                    <div class="tag-title">
+                        photo:
+                    </div>
+                    <div class="tag-content">
+                        Ankit Shakya
+                    </div>
+                </div>
             </div>
         </div>
         </section>

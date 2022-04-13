@@ -35,7 +35,7 @@ body {
     font-size: 1.2rem;
     font-family: "Ang-Regular", Arial, sans-serif;
     font-weight: Regular;
-    letter-spacing: 1.6;
+    letter-spacing: 0.05rem;
     /* background: red; */
     color: black;
     padding: 2rem;
@@ -255,16 +255,18 @@ body {
 .main {
     margin-top: 5rem;
     margin-bottom: 5rem;
-    width: 60%;
+    width: 100%;
     margin-left: 5rem;
 }
 
 .about p {
-    word-spacing: 3;
+    letter-spacing: 0.05rem;
 }
 
 .main p {
     margin-top: 1.5rem;
+    /* TODO: MAYBE REMOVE */
+    font-size: 1.4rem;
 }
 
 .exhibitions p {
@@ -275,21 +277,49 @@ body {
 
 /* --------- PROJECT PAGE --------- */
 
-.project-overview {
+.main {
     padding-top: 10vh;
     padding-bottom: 5rem;
+    max-width: 991.98px;
+    margin: 0 auto;
 }
 
-.tags {
-    display: flex;
+.tags-container {
+    width: 100%;
     position: fixed;
     bottom: 0;
     left: 0;
-    padding-left: 6vw;
-    background-color: white;
-    width: 100%;
     z-index: 50;
+    font-size: 1rem;
+    background-color: #fff;
+    padding: 0.3rem 0;
 }
+
+.tags {
+    max-width: 991.98px;
+    padding: 0 2rem;
+    margin: 0 auto;
+    /* padding-left: 6vw; */
+    width: 100%;
+    letter-spacing: 0.05rem;
+}
+
+.tag-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.tag-title {
+    width: 13%;
+    margin-right: 1rem;
+}
+
+.tag-content {
+    flex-grow: 1;
+}
+
+/* .ta
 
 .tags1 {
     width: 13%;
@@ -297,11 +327,11 @@ body {
 
 .tags2 {
     width: 77%;
-}
+} */
 
 .tags p {
     font-size: 1rem;
-    word-spacing: 3;
+    letter-spacing: 0.05rem;
 }
 
 /* --------- PROJECT IMAGE ZOOM --------- */
@@ -323,6 +353,14 @@ body {
 
 .lb-caption {
     font-family: 'Heebo', sans-serif;
+}
+
+.spacer-64 {
+    height: 64px;
+}
+
+.spacer-128 {
+    height: 128px;
 }
 
 
