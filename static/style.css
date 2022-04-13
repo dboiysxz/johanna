@@ -291,15 +291,19 @@ body {
 }
 
 .main p {
-    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     /* TODO: MAYBE REMOVE */
     font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+}
+
+.main a,
+.main a:hover, .main a:visited {
+    color: black;
 }
 
 .exhibitions p {
     font-size: 1rem;
-    margin-left: 1vw;
-    margin-top: 2rem;
 }
 
 /* --------- PROJECT PAGE --------- */
@@ -323,11 +327,14 @@ body {
 }
 
 .tags {
-    max-width: 991.98px;
-    padding: 0 2rem;
-    margin: 0 auto;
     /* padding-left: 6vw; */
+}
+
+.general-content {
+    max-width: 991.98px;
     width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
     letter-spacing: 0.05rem;
 }
 
@@ -390,6 +397,13 @@ body {
     height: 128px;
 }
 
+.spacer-1rem {
+    height: 1rem;
+}
+
+.spacer-2rem {
+    height: 2rem;
+}
 
 /* Zoom */
 img {

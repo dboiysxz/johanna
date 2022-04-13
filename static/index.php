@@ -53,15 +53,15 @@ include_once 'header.php';
                 </div>
             </div>
         </div>
-        
+
         <button class="carousel-button carousel-button-left left" data-carousel-button="left"><img src="./img/prev.png"></button>
         <button class="carousel-button carousel-button-right right" data-carousel-button="right"><img src="./img/next.png"></button>
 
         <!-- <div class="carousel" data-carousel>
             <button class="carousel-button left" data-carousel-button="left"><img src="./img/prev.png"></button>
             <button class="carousel-button right" data-carousel-button="right"><img src="./img/next.png"></button>
-            
-            
+
+
             <ul data-slides>
                 <li class="slide" data-active>
                     <img src="img/carpet3.jpg" alt="carpet3">
@@ -119,23 +119,26 @@ include_once 'header.php';
             Text by Margit Säde <br>
             Translation Alina Astrova</p>
         </div>
+        <div class="spacer-1rem"></div>
+        <div class="exhibitions general-content">
+            <p>
+                SELECTED PROJECTS & EXHIBITIONS <br><br>
+                <span class="numbers">2019</span> NO FUN RUGS second collection FOLDED presentation, YEIJ Studio, Tallinn, EE <br>
+                <span class="numbers">2019</span> Interwoven, Johanna Ulfsak & Kärt Ojavee, Espoo Museum of Modern Art, Espoo, FI<br>
+                <span class="numbers">2019</span> Installation Live Streams S, Identity, 6th Riga International Textile and Fibre Art Triennial Exhibition, Riga, LV <br>
+                <span class="numbers">2018</span> Save As, Johanna Ulfsak & Kärt Ojavee, Temnikova & Kasela Gallery, Tallinn, EE<br>
+                <span class="numbers">2018</span> Inquiry & Investigation, Johanna Ulfsak & Lolina, Artists Space, New York, US & Cafe Oto, London, UK<br>
+                <span class="numbers">2018</span> Launch of NO FUN RUGS, Pirate Showroom in Julice Laverie, Paris, FR<br>
+                <span class="numbers">2017—2018</span> Interactive textile Live Streams, Intermedial in European Parliament building, Brussels, BE<br>
+                <span class="numbers">2017</span> Live Streams XL, Johanna Ulfsak & Kärt Ojavee, Estonian Presidency in Creative Hub, Tallinn, EE<br>
+                <span class="numbers">2016</span> Live Streams, Johanna Ulfsak & Kärt Ojavee, HOP Gallery, Tallinn, EE<br>
+                <span class="numbers">2016</span> Touring at: Contemporary Art Centre in Rapla, Rapla, EE<br>
+                <span class="numbers">2016</span> The Next Great Fashion Designer, Johanna Ulfsak & Alina Astrova, OVERDUIN & CO, LA, US
+            </p>
+        </div>
+
     </div>
-    <div class="exhibitions">
-        <p>
-            SELECTED PROJECTS & EXHIBITIONS <br><br>
-            <span class="numbers">2019</span> NO FUN RUGS second collection FOLDED presentation, YEIJ Studio, Tallinn, EE <br>
-            <span class="numbers">2019</span> Interwoven, Johanna Ulfsak & Kärt Ojavee, Espoo Museum of Modern Art, Espoo, FI<br>
-            <span class="numbers">2019</span> Installation Live Streams S, Identity, 6th Riga International Textile and Fibre Art Triennial Exhibition, Riga, LV <br>
-            <span class="numbers">2018</span> Save As, Johanna Ulfsak & Kärt Ojavee, Temnikova & Kasela Gallery, Tallinn, EE<br>
-            <span class="numbers">2018</span> Inquiry & Investigation, Johanna Ulfsak & Lolina, Artists Space, New York, US & Cafe Oto, London, UK<br>
-            <span class="numbers">2018</span> Launch of NO FUN RUGS, Pirate Showroom in Julice Laverie, Paris, FR<br>
-            <span class="numbers">2017—2018</span> Interactive textile Live Streams, Intermedial in European Parliament building, Brussels, BE<br>
-            <span class="numbers">2017</span> Live Streams XL, Johanna Ulfsak & Kärt Ojavee, Estonian Presidency in Creative Hub, Tallinn, EE<br>
-            <span class="numbers">2016</span> Live Streams, Johanna Ulfsak & Kärt Ojavee, HOP Gallery, Tallinn, EE<br>
-            <span class="numbers">2016</span> Touring at: Contemporary Art Centre in Rapla, Rapla, EE<br>
-            <span class="numbers">2016</span> The Next Great Fashion Designer, Johanna Ulfsak & Alina Astrova, OVERDUIN & CO, LA, US
-        </p>
-    </div>
+
 </section>
 
 

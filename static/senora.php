@@ -64,7 +64,7 @@ include_once 'header.php';
         <!-- TODO: Calculate how many spacers we need by tags container height -->
 
         <div class="tags-container">
-            <div class="tags">
+            <div class="tags general-content">
                 <div class="tag-row">
                     <div class="tag-title">
                         year:
