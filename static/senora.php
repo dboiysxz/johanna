@@ -13,7 +13,7 @@ include_once 'header.php';
                 <button class="carousel-button left" data-carousel-button="left"><img src="./img/prev.png"> </button>
                 <button class="carousel-button right" data-carousel-button="right"><img src="./img/next.png"></button>
                 <ul data-slides>
-                    <li class="slide" data-active>
+                    <li class="slide slide-absolute" data-active>
                         <div class="lens"></div>
                         <img id="featured" src="./img/senora_view1.png" alt="SEÑORA exhibion view no. 1">
                         <div class="caption">
@@ -22,7 +22,7 @@ include_once 'header.php';
                             </p>
                         </div>
                     </li>
-                    <li class="slide">
+                    <li class="slide slide-absolute">
                         <div class="lens"></div>
                         <img src="./img/senora_view2.png" alt="SEÑORA exhibion view no. 2">
                         <div class="caption">
@@ -31,7 +31,7 @@ include_once 'header.php';
                             </p>
                         </div>
                     </li>
-                    <li class="slide">
+                    <li class="slide slide-absolute">
                         <div class="lens"></div>
                         <img src="./img/senora_view3.png" alt="SEÑORA exhibion view no. 3">
                         <div class="caption">
