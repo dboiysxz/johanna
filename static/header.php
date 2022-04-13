@@ -12,8 +12,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap" rel="stylesheet">
 
 
-    <link rel="stylesheet" href="./style.css"/>
+
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Photoswipe -->
+    <!-- <link rel="stylesheet" href="./assets/photo-swipe/photoswipe.css"> 
+    <link rel="stylesheet" href="./assets/photo-swipe/default-skin/default-skin.css"> 
+    <script src="./assets/photo-swipe/photoswipe.min.js"></script> 
+    <script src="./assets/photo-swipe/photoswipe-ui-default.min.js"></script>  -->
+
+    <!-- Swiper -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/swiper-bundle.min.css">
+    <script src="./assets/js/swiper-bundle.min.js" type="text/javascript"></script>
+    
     <script src="./script.js" defer></script>
+    <script src="./assets/js/main.js" defer></script>
+
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+
 </head>
 <body>
     <!-- ------------------------ NAVBAR ---------------------------------- -->
