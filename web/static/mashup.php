@@ -5,24 +5,24 @@ include 'header.php';
  <?php
  include 'projectindex.php';
   ?>
-        <link rel="stylesheet" href="./assets/css/lightbox.css"/>
-        <link rel="stylesheet" href="./assets/css/mashup.css"/>
+        <link rel="stylesheet" href="{{ siteUrl }}static/assets/css/lightbox.css"/>
+        <link rel="stylesheet" href="{{ siteUrl }}static/assets/css/mashup.css"/>
 
         <!-- ---------------------------- MASHUP ----------------------------- -->
         <section class="mashup-container">
             <div class="mashup-item">
                 <a href="img/Carpet 1_jpeg.jpg" data-lightbox="carpet image :)" data-title="Caption1">
-                    <img class="mash-gallery" src="img/Carpet 1_jpeg.jpg" alt="carpet3">
+                    <img class="mash-gallery" {{ siteUrl }}static/img/Carpet 1_jpeg.jpg" alt="carpet3">
                 </a>
             </div>
             <div class="mashup-item">
                 <a href="./img/carpet3.jpg" data-lightbox="carpet image :)" data-title="Caption1">
-                    <img class="mash-gallery" src="img/carpet3.jpg" alt="carpet3">
+                    <img class="mash-gallery" {{ siteUrl }}static/img/carpet3.jpg" alt="carpet3">
                 </a>
             </div>
             <div class="mashup-item">
                 <a href="img/Screenshot 2021-09-06 at 19.13.03.png" data-lightbox="carpet image :)" data-title="Caption1">
-                    <img class="mash-gallery" src="img/Screenshot 2021-09-06 at 19.13.03.png" alt="carpet3">
+                    <img class="mash-gallery" {{ siteUrl }}static/img/Screenshot 2021-09-06 at 19.13.03.png" alt="carpet3">
                 </a>
             </div>
             <div class="mashup-item">
@@ -91,6 +91,6 @@ include 'header.php';
                 </a>
             </div>
         </section>
-        <script src="./assets/js/lightbox-plus-jquery.js"></script>
+        <script src="{{ siteUrl }}static/assets/js/lightbox-plus-jquery.js"></script>
     </body>
 </html>

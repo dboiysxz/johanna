@@ -10,9 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./assets/css/lightbox.css"/>
-    <link rel="stylesheet" href="./assets/css/commercial.css"/>
-    <script src="./assets/js/script.js" defer></script>
+    <link rel="stylesheet" href="{{ siteUrl }}static/assets/css/lightbox.css"/>
+    <link rel="stylesheet" href="{{ siteUrl }}static/assets/css/commercial.css"/>
+    <script src="{{ siteUrl }}static/assets/js/script.js" defer></script>
 </head>
 <body>
     <!-- ------------------------ NAVBAR ---------------------------------- -->
@@ -130,6 +130,6 @@
             </div>
         </div>
     </section>
-    <script src="./assets/js/lightbox-plus-jquery.js"></script>
+    <script src="{{ siteUrl }}static/assets/js/lightbox-plus-jquery.js"></script>
 </body>
 </html>
