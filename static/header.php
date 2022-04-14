@@ -24,11 +24,11 @@
     <!-- Swiper -->
     <link rel="stylesheet" type="text/css" href="./assets/css/swiper-bundle.min.css">
     <script src="./assets/js/swiper-bundle.min.js" type="text/javascript"></script>
-    
-    <script src="./script.js" defer></script>
+
+    <script src="./assets/js/script.js" defer></script>
     <script src="./assets/js/main.js" defer></script>
 
-    <link rel="stylesheet" type="text/css" href="./style.css"/>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css"/>
 
 </head>
 <body>

@@ -121,6 +121,6 @@ include_once 'header.php';
             </div>
         </div>
         </section>
-        <script src="./zoom.js" defer></script>
+        <script src="./assets/js/zoom.js" defer></script>
     </body>
 </html>

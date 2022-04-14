@@ -243,6 +243,15 @@ body {
     mask: var(--mask);
 }
 
+.mash-gallery {
+    -webkit-filter: none;
+    filter: none;
+}
+
+.mash-gallery:hover {
+    -webkit-filter: brightness(70%) !important;
+    filter: brightness(70%) !important;
+}
 
 /*--------- INDEX ---------*/
 .index {
