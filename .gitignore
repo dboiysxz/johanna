@@ -5,3 +5,11 @@
 /config
 .DS_Store
 DS_Store
+dev-static
+/dev-static
+dev-static/*
+/dev-static/*
+# web
+# /web
+# web/*
+# /web/*

@@ -6,16 +6,16 @@ include_once 'header.php';
  <?php
  include_once 'projectindex.php';
   ?>
-  <script src="{{ siteUrl }}static/assets/js/magnifying-glass.js" type="text/javascript"></script>
+  <script src="./assets/js/magnifying-glass.js" type="text/javascript"></script>
 
     <!-- ---------------------------- CAROUSEL----------------------------- -->
 
-    <section aria-label="Selected Projects" class="gallery swiper-container">
+    <section aria-label="Selected Projects" class="swiper-container gallery zoomable-container">
         <div class="swiper-wrapper carousel">
             <div class="swiper-slide slide zoomable">
                 <div class="magnifying-glass"></div>
                 <div class="large"></div>
-                <img class="small" {{ siteUrl }}static/img/Photo29_28.jpg" alt="Photo29_28.jpg">
+                <img class="small" src="./img/Photo29_28.jpg" alt="Photo29_28.jpg">
                 <div class="caption">
                     <p>
                         <a href="project.php">Cool Project</a>
@@ -25,7 +25,7 @@ include_once 'header.php';
 
             <div class="swiper-slide slide zoomable">
                 <div class="magnifying-glass"></div>
-                <img src=" }}static/img/Photo29_28.jpg" alt="Photo29_28.jpg">
+                <img src="./img/Photo29_28.jpg" alt="Photo29_28.jpg">
                 <div class="caption">
                     <p>
                         <a href="project.php">Cool Project</a>
@@ -35,7 +35,7 @@ include_once 'header.php';
 
             <div class="swiper-slide slide zoomable">
                 <div class="magnifying-glass"></div>
-                <img src=" }}static/img/_DSD9279.jpg" alt="_DSD9279.jpg">
+                <img src="./img/_DSD9279.jpg" alt="_DSD9279.jpg">
                 <div class="caption">
                     <p>
                         <a href="project.php">Cool Project</a>
@@ -45,7 +45,7 @@ include_once 'header.php';
 
             <div class="swiper-slide slide zoomable">
                 <div class="magnifying-glass"></div>
-                <img src=" }}static/img/_DSD9279.jpg" alt="_DSD9279.jpg">
+                <img src="./img/_DSD9279.jpg" alt="_DSD9279.jpg">
                 <div class="caption">
                     <p>
                         <a href="project.php">Cool Project</a>
@@ -64,7 +64,7 @@ include_once 'header.php';
 
             <ul data-slides>
                 <li class="slide" data-active>
-                    <img src=" }}static/img/carpet3.jpg" alt="carpet3">
+                    <img src="./img/carpet3.jpg" alt="carpet3">
                     <div class="caption">
                         <p>
                             <a href="project.php">Cool Project</a>
@@ -72,7 +72,7 @@ include_once 'header.php';
                     </div>
                 </li>
                 <li class="slide">
-                        <img src=" }}static/img/_DSD9279.jpg" alt="carpet3">
+                        <img src="./img/_DSD9279.jpg" alt="carpet3">
                     <div class="caption">
                         <p>
                             <a href="#">caption2</a>
@@ -80,7 +80,7 @@ include_once 'header.php';
                     </div>
                 </li>
                 <li class="slide">
-                    <img src=" }}static/img/Photo29_28.jpg" alt="photo">
+                    <img src="./img/Photo29_28.jpg" alt="photo">
                     <div class="caption">
                         <p>
                             <a href="#">caption long-ass caption long-ass caption</a>
@@ -142,6 +142,6 @@ include_once 'header.php';
 </section>
 
 
-
+</div><!-- end of #site-container -->
 </body>
 </html>

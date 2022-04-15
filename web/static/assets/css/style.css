@@ -38,7 +38,10 @@ body {
     letter-spacing: 0.05rem;
     /* background: red; */
     color: black;
-    padding: 2rem;
+}
+
+#site-container {
+    padding: 0 2rem 2rem;
 }
 
 .numbers {
@@ -437,6 +440,13 @@ img {
     opacity: 1;
     -webkit-transform: scale(1);
 }
+
+/* .swiper-container {
+    width: calc(100% + 4rem);
+    margin-left: -2rem;
+} */
+
+
 /* --------- MEDIA QUERIES --------- */
 
 
@@ -453,7 +463,9 @@ img {
 
 /* // Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-
+    .magnifying-glass {
+        display: none;
+    }
 }
 
 /* // Medium devices (tablets, less than 992px) */

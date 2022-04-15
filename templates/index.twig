@@ -32,93 +32,97 @@
 
 </head>
 <body>
-    <!-- ------------------------ NAVBAR ---------------------------------- -->
-    <section class="nav">
-        <div class="navbar">
-            <div class="item1">
-                <a href="./mashup.php">mashup</a>
+    <div id="site-container">
+        <div class="spacer-2rem"></div>
+        <!-- ------------------------ NAVBAR ---------------------------------- -->
+        <section class="nav">
+            <div class="navbar">
+                <div class="item1">
+                    <a href="./mashup.php">mashup</a>
+                </div>
+                <div class="item2">
+                    <a href="./#about">johanna ulfsak</a>
+                </div>
+                <div class="item3">
+                    <a href="javascript:;" onclick="toggleProjects()">index</a>
+                </div>
             </div>
-            <div class="item2">
-                <a href="./#about">johanna ulfsak</a>
-            </div>
-            <div class="item3">
-                <a href="javascript:;" onclick="toggleProjects()">index</a>
-            </div>
-        </div>
-    </section>
+        </section>
 
 
-    <!-- ------------------------ PROJECT INDEX --------------------------------- -->
+        <!-- ------------------------ PROJECT INDEX --------------------------------- -->
 
-    <section id="all-projects" class="index">
-    <div class="projects">
-        <div class="project">
-            <div class=project-items>
-                <div class="year">
-                    <p class="numbers">2021</p>
+        <section id="all-projects" class="index">
+        <div class="projects">
+            <div class="project">
+                <div class=project-items>
+                    <div class="year">
+                        <p class="numbers">2021</p>
+                    </div>
+                    <div class="title">
+                        <a href="./floorplan.php"><p class="letters">Floor Plan</p></a>
+                    </div>
                 </div>
-                <div class="title">
-                    <a href="./floorplan.php"><p class="letters">Floor Plan</p></a>
+            </div>
+            <div class="project">
+                <div class=project-items>
+                    <div class="year">
+                        <p class="numbers">2020</p>
+                    </div>
+                    <div class="title">
+                        <a href="./senora.php"><p class="letters">SEÑORA</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class=project-items>
+                    <div class="year">
+                        <p class="numbers">2020</p>
+                    </div>
+                    <div class="title">
+                        <a href="./patterns.php"><p class="letters">Patterns</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class=project-items>
+                    <div class="year">
+                        <p class="numbers">2018</p>
+                    </div>
+                    <div class="title">
+                        <a href="./irony.php"><p class="letters">Ongoing scarf collection “QUO VADIS, IRONY?</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class=project-items>
+                    <div class="year">
+                        <p class="numbers">2018</p>
+                    </div>
+                    <div class="title">
+                        <a href="./saveas.php"><p class="letters">Save As</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class=project-items>
+                    <div class="year">
+                        <p class="numbers">2016</p>
+                    </div>
+                    <div class="title">
+                        <a href="./la.php"><p class="letters">The Next Great Fashion Designer LA</p></a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="project">
-            <div class=project-items>
-                <div class="year">
-                    <p class="numbers">2020</p>
-                </div>
-                <div class="title">
-                    <a href="./senora.php"><p class="letters">SEÑORA</p></a>
-                </div>
-            </div>
-        </div>
-        <div class="project">
-            <div class=project-items>
-                <div class="year">
-                    <p class="numbers">2020</p>
-                </div>
-                <div class="title">
-                    <a href="./patterns.php"><p class="letters">Patterns</p></a>
-                </div>
-            </div>
-        </div>
-        <div class="project">
-            <div class=project-items>
-                <div class="year">
-                    <p class="numbers">2018</p>
-                </div>
-                <div class="title">
-                    <a href="./irony.php"><p class="letters">Ongoing scarf collection “QUO VADIS, IRONY?</p></a>
-                </div>
-            </div>
-        </div>
-        <div class="project">
-            <div class=project-items>
-                <div class="year">
-                    <p class="numbers">2018</p>
-                </div>
-                <div class="title">
-                    <a href="./saveas.php"><p class="letters">Save As</p></a>
-                </div>
-            </div>
-        </div>
-        <div class="project">
-            <div class=project-items>
-                <div class="year">
-                    <p class="numbers">2016</p>
-                </div>
-                <div class="title">
-                    <a href="./la.php"><p class="letters">The Next Great Fashion Designer LA</p></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    </section>
+        </section>
 
 
-    {% block content %}
+        {% block content %}
 
-    {% endblock %}
+        {% endblock %}
 
+
+        </div>{# end of site-container #}
 </body>
 </html>
