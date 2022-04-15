@@ -41,7 +41,6 @@ jQuery(function ($) {
           deactivate();
       }
 
-      // img.addEventListener( 'load', onLoad );
       img.addEventListener('mousemove', onMousemove);
       img.addEventListener('mouseleave', onMouseleave);
       setLensContent();
@@ -49,12 +48,11 @@ jQuery(function ($) {
 
   function registerLenses() {
       $('.zoomable').each(function (index, elem) {
+          console.log('HERE')
           addMagnifyingGlass($(elem))
       })
   }
 
   registerLenses();
-  setInterval(registerLenses, 500);
-
-
+  setTimeout(registerLenses, 1);
 })

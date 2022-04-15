@@ -1,7 +1,2 @@
-{# {% extends "index" %}
-
-{% set projects = craft.entries.section('projects').all() %}
-{% for project in projects %}
-
-    {% set image = project.images.one() %}
- #}
+{% set project = craft.entries.section('projects').one() %}
+{% redirect project.url %}
