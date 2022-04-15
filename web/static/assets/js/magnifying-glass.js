@@ -1,5 +1,6 @@
 jQuery(function ($) {
   function addMagnifyingGlass(zoomArea) {
+      $('.zoomable').removeClass('active');
       var zoom = $('.magnifying-glass', zoomArea)[0];
       var img = $('img', zoomArea)[0];
 
@@ -13,11 +14,11 @@ jQuery(function ($) {
       var timeout, ratio, Ix, Iy;
 
       function activate() {
-          document.body.classList.add('active');
+          zoomArea[0].classList.add('active');
       }
 
       function deactivate() {
-          document.body.classList.remove('active');
+          zoomArea[0].classList.remove('active');
       }
 
       function updateMagnifier(x, y) {

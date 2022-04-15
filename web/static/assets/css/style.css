@@ -444,7 +444,7 @@ body {
     pointer-events: none;
 }
 
-.active .magnifying-glass {
+.zoomable.active .magnifying-glass {
     opacity: 1;
     -webkit-transform: scale(1);
 }
@@ -456,6 +456,11 @@ body {
 
 .swiper-slide-image {
     margin: 20px auto;
+}
+
+.lightboxOverlay {
+    opacity: 0.9 !important;
+    background-color: white !important;
 }
 
 
