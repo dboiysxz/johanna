@@ -90,6 +90,10 @@ body {
     text-align: right;
 }
 
+.index-subnav-toggle {
+    cursor: pointer;
+}
+
 /* --------- CAROUSEL ---------*/
 .carousel > li,ul {
     margin: 0;
@@ -200,7 +204,6 @@ body {
 /*--------- INDEX ---------*/
 .index {
     width: 100%;
-    height: 100%;
     z-index: 10;
     position: fixed;
     top: 0;
@@ -208,18 +211,18 @@ body {
     display: none;
 }
 
-.active {
+.nav-opened {
     display: block;
 }
 
 .projects {
     padding-top: 1.5rem;
     width: 95%;
-    height: 28rem;
+    max-height: 28rem;
     background-color: rgba(222,255,121, 0.9);
     display: flex;
     flex-direction: column;
-    margin: 4rem auto;
+    margin: 4rem auto 0;
     overflow-y: scroll;
 
     --mask:

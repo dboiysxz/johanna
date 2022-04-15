@@ -25,10 +25,27 @@
 
 
 
+// Index Submenu toggling
+var allProjects = document.getElementById('all-projects')
 
-const allProjects = document.getElementById('all-projects')
+function toggleProjects(shouldBeOpened) {
+    if (typeof shouldBeOpened === 'undefined') {
+        shouldBeOpened = !allProjects.classList.contains('nav-opened');
+    }
 
-function toggleProjects () {
-    allProjects.classList.toggle('active')
-    document.body.classList.toggle('active')
+    allProjects.classList.toggle('nav-opened', shouldBeOpened)
+    document.body.classList.toggle('nav-opened', shouldBeOpened)
 }
+
+jQuery(function($) {
+    $(document).on('click', '.index-subnav-toggle', function(e) {
+        e.stopPropagation();
+        toggleProjects();
+    })
+
+    $(document).on('click', function(e) {
+        if (!$(e.target).closest('#all-projects').length) {
+            toggleProjects(false)
+        }
+    })
+})

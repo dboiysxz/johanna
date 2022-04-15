@@ -1,0 +1,40 @@
+{# Horizontal Menu #}
+<section class="nav">
+    <div class="navbar">
+        <div class="item1">
+            <a href="./mashup.php">mashup</a>
+        </div>
+        <div class="item2">
+            <a href="{{ siteUrl }}#about">johanna ulfsak</a>
+        </div>
+        <div class="item3 index-subnav-toggle">
+            <a>index</a>
+        </div>
+    </div>
+</section>
+
+
+{# Index Submenu #}
+<section id="all-projects" class="index">
+<div class="projects">
+
+    {% for link in indexMenu.navigationLinks.all() %}
+    <div class="project">
+        <div class=project-items>
+            <div class="year">
+                {% if link.navigationExtra %}
+                <p>{{ link.navigationExtra|replace(ALT_FONT_REGEX, ALT_FONT_REPLACE)|raw }}</p>
+                {% endif %}
+            </div>
+            <div class="title">
+                {% set destination = link.navigationDestination.one() %}
+                <a href="{{ destination.url }}">
+                    <p>{{ link.navigationTitle|replace(ALT_FONT_REGEX, ALT_FONT_REPLACE)|raw }}</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+
+</div>
+</section>
