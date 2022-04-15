@@ -119,9 +119,9 @@ body {
       conic-gradient(from -135deg at right,#0000,#000 1deg 89deg,#0000 90deg) 100% 0/0.7rem 1.4rem no-repeat space;
     -webkit-mask: var(--mask);
     mask: var(--mask);
-    -webkit-transition: opacity ease 0.4s background ease 0.4s;
-    -o-transition: opacity ease 0.4s background ease 0.4s;
-    transition: opacity ease 0.4s background ease 0.4s;
+    -webkit-transition: opacity ease 0.4s;
+    -o-transition: opacity ease 0.4s;
+    transition: opacity ease 0.4s;
 }
 
 .mashup-item:hover .mashup-overlay {
