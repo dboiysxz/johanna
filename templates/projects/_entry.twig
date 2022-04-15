@@ -3,6 +3,9 @@
 {% block content %}
 
     {% set projects = craft.entries.section('projects').all() %}
+    {% for project in projects %}
+
+        {% set image = project.images.one() %}
 
     <section aria-label="Selected Projects" class="gallery">
         <div class="carousel" data-carousel>
@@ -11,7 +14,7 @@
             <ul data-slides>
                 <li class="slide slide-absolute" data-active>
                     <div class="lens"></div>
-                    <img id="featured" src="./img/senora_view1.png" alt="SEÑORA exhibion view no. 1">
+                    <img id="featured" src="{{ image.url }}" alt="{{ image.title }}">
                     <div class="caption">
                         <p>
                             SEÑORA exhibion view #<span class="numbers">1</span>
@@ -42,7 +45,7 @@
 
     <!-- ---------------------------- ABOUT ----------------------------- -->
 
-    {% for project in projects %}
+
     <section id="about" class="project-overview">
     <div class="main">
         <p>
@@ -54,6 +57,8 @@
     </div>
     <div class="spacer-64"></div>
     <!-- TODO: Calculate how many spacers we need by tags container height -->
+
+    <!-- {{ project.meta}} -->
 
     <div class="tags-container">
         <div class="tags general-content">
