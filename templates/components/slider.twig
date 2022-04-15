@@ -1,0 +1,26 @@
+{% if images %}
+<script src="{{ siteUrl }}static/assets/js/magnifying-glass.js" type="text/javascript"></script>
+<section aria-label="Selected Projects" class="swiper-container gallery zoomable-container">
+    <div class="swiper-wrapper carousel">
+
+        {% for image in images %}
+        <div class="swiper-slide slide zoomable">
+            <div class="magnifying-glass"></div>
+            <div class="large"></div>
+            <img class="small" src="{{ image.url }}" alt="{{ image.title }}">
+            <div class="caption">
+                <p>
+                    <!-- <a href="project.php">Cool Project</a> -->
+                    {{ image.title|replace(ALT_FONT_REGEX, ALT_FONT_REPLACE)|raw  }}
+                </p>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+
+    <button class="carousel-button carousel-button-left left" data-carousel-button="left"><img src="{{ siteUrl }}static/img/prev.png"></button>
+    <button class="carousel-button carousel-button-right right" data-carousel-button="right"><img src="{{ siteUrl }}static/img/next.png"></button>
+
+</section>
+{% endif %}

@@ -13,8 +13,4 @@ jQuery(function() {
         //     pauseOnMouseEnter: true,
         // },
     });
-
-    
-
 })
-

@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
+
+    {# set ALT_FONT_REGEX = '/[(0-9)|[zŽžÀ-ÿ]+/' #}
+    {% set ALT_FONT_REGEX = '/[(0-9)]+/' %}
+    {% set ALT_FONT_REPLACE = '<span class="alt-font">$0</span>' %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
