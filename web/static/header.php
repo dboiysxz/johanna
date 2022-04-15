@@ -16,33 +16,36 @@
     <!-- JQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Photoswipe -->
-    <!-- <link rel="stylesheet" href="{{ siteUrl }}static/assets/photo-swipe/photoswipe.css">
-    <link rel="stylesheet" href="{{ siteUrl }}static/assets/photo-swipe/default-skin/default-skin.css">
-    <script src="{{ siteUrl }}static/assets/photo-swipe/photoswipe.min.js"></script>
-    <script src="{{ siteUrl }}static/assets/photo-swipe/photoswipe-ui-default.min.js"></script>  -->
+    <!-- <link rel="stylesheet" href="./assets/photo-swipe/photoswipe.css">
+    <link rel="stylesheet" href="./assets/photo-swipe/default-skin/default-skin.css">
+    <script src="./assets/photo-swipe/photoswipe.min.js"></script>
+    <script src="./assets/photo-swipe/photoswipe-ui-default.min.js"></script>  -->
 
     <!-- Swiper -->
-    <link rel="stylesheet" type="text/css" href="{{ siteUrl }}static/assets/css/swiper-bundle.min.css">
-    <script src="{{ siteUrl }}static/assets/js/swiper-bundle.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/css/swiper-bundle.min.css">
+    <script src="./assets/js/swiper-bundle.min.js" type="text/javascript"></script>
 
-    <script src="{{ siteUrl }}static/assets/js/script.js" defer></script>
-    <script src="{{ siteUrl }}static/assets/js/main.js" defer></script>
+    <script src="./assets/js/script.js" defer></script>
+    <script src="./assets/js/main.js" defer></script>
 
-    <link rel="stylesheet" type="text/css" href="{{ siteUrl }}static/assets/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css"/>
 
 </head>
 <body>
-    <!-- ------------------------ NAVBAR ---------------------------------- -->
-    <section class="nav">
-        <div class="navbar">
-            <div class="item1">
-                <a href="./mashup.php">mashup</a>
+    <div id="site-container">
+        <div class="spacer-2rem"></div>
+        <!-- ------------------------ NAVBAR ---------------------------------- -->
+        <section class="nav">
+            <div class="navbar">
+                <div class="item1">
+                    <a href="./mashup.php">mashup</a>
+                </div>
+                <div class="item2">
+                    <a href="./#about">johanna ulfsak</a>
+                </div>
+                <div class="item3">
+                    <a href="javascript:;" onclick="toggleProjects()">index</a>
+                </div>
             </div>
-            <div class="item2">
-                <a href="./#about">johanna ulfsak</a>
-            </div>
-            <div class="item3">
-                <a href="javascript:;" onclick="toggleProjects()">index</a>
-            </div>
-        </div>
-    </section>
+        </section>
+    
