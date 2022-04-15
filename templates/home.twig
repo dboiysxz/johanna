@@ -25,7 +25,9 @@
         <p>
         SELECTED PROJECTS & EXHIBITIONS <br><br>
             {% for item in resumeItems %}
+            <span class="resume-items-list-item">
                 <span class="numbers">{{ item.year|replace(ALT_FONT_REGEX, ALT_FONT_REPLACE)|raw }}</span> {{ item.projectName|replace(ALT_FONT_REGEX, ALT_FONT_REPLACE)|raw }}<br />
+            </span>
             {% endfor %}
         </p>
         {% endif %}

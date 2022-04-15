@@ -36,8 +36,10 @@ body {
     letter-spacing: 1.6;
     /* background: red; */
     color: black;
-    padding: 2rem;
+}
 
+#site-container {
+    padding: 2rem;
 }
 
 .numbers {
@@ -287,3 +289,62 @@ body {
 .lb-number {
     display: none;
 }
+
+/* --------- MEDIA QUERIES --------- */
+
+
+
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    #site-container {
+        padding: 1rem 0;
+    }
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+}
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+
+}
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    #site-container {
+        padding: 1rem 16px;
+    }
+
+    .navbar {
+        font-size: 16px;
+    }
+
+    .main p {
+        font-size: 1.2rem;
+    }
+    .tags-container {
+        font-size: 0.9rem;
+    }
+
+    .mashup-window, .mashup-overlay{
+        --mask:
+          linear-gradient(#000 0 0) center/calc(100% - 0.8rem + 1px) calc(100% - 0.8rem + 1px) no-repeat,
+          conic-gradient(from 135deg at top,#0000,#000 1deg 89deg,#0000 90deg) 0 0/0.8rem 0.7rem space no-repeat,
+          conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 0 100%/0.8rem 0.7rem space no-repeat,
+          conic-gradient(from 45deg at left,#0000,#000 1deg 89deg,#0000 90deg) 0 0/0.7rem 0.8rem no-repeat space,
+          conic-gradient(from -135deg at right,#0000,#000 1deg 89deg,#0000 90deg) 100% 0/0.7rem 0.8rem no-repeat space;
+        -webkit-mask: var(--mask);
+        mask: var(--mask);
+    }
+}
+
+/* // XX-Large devices (larger desktops)
+// No media query since the xxl breakpoint has no upper bound on its width */
