@@ -15,7 +15,7 @@
 <section  >
   <div id="about" class="main project-overview">
 
-      <p>{{entry.about}}</p>
+      <p>{{entry.about|replace(ALT_FONT_REGEX, ALT_FONT_REPLACE)|raw }}</p>
 
       <div class="spacer-1rem"></div>
       <div class="exhibitions general-content">
@@ -25,7 +25,7 @@
         <p>
         SELECTED PROJECTS & EXHIBITIONS <br><br>
             {% for item in resumeItems %}
-                <span class="numbers">{{ item.year }}</span> {{ item.projectName }}<br />
+                <span class="numbers">{{ item.year|replace(ALT_FONT_REGEX, ALT_FONT_REPLACE)|raw }}</span> {{ item.projectName|replace(ALT_FONT_REGEX, ALT_FONT_REPLACE)|raw }}<br />
             {% endfor %}
         </p>
         {% endif %}

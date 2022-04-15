@@ -3,6 +3,9 @@ jQuery(function ($) {
       var zoom = $('.magnifying-glass', zoomArea)[0];
       var img = $('img', zoomArea)[0];
 
+      var fullSizeImage = new Image();
+      fullSizeImage.src = $(img).attr('data-full');
+
       if (!img || !zoom) return;
       var boundingRect = zoomArea.closest('.zoomable-container');
       var Zw = zoom.offsetWidth;
@@ -24,8 +27,8 @@ jQuery(function ($) {
       }
 
       function setLensContent() {
-          ratio = img.naturalWidth / img.width;
-          zoom.style.backgroundImage = 'url(' + img.src + ')';
+          ratio = fullSizeImage.naturalWidth / img.width;
+          zoom.style.backgroundImage = 'url(' + fullSizeImage.src + ')';
           Ix = img.offsetLeft;
           Iy = img.offsetTop;
       }
@@ -43,16 +46,20 @@ jQuery(function ($) {
 
       img.addEventListener('mousemove', onMousemove);
       img.addEventListener('mouseleave', onMouseleave);
+      fullSizeImage.addEventListener('load', setLensContent)
       setLensContent();
   }
 
   function registerLenses() {
       $('.zoomable').each(function (index, elem) {
-          console.log('HERE')
           addMagnifyingGlass($(elem))
       })
   }
 
-  registerLenses();
+  // registerLenses();
   setTimeout(registerLenses, 1);
 })
+
+function getFullSizeImage(url) {
+
+}
