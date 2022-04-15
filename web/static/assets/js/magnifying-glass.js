@@ -18,7 +18,7 @@ jQuery(function ($) {
       }
 
       function updateMagnifier(x, y) {
-          zoom.style.top = (y + 32) + 'px'; // - 32 corrects mouse position for top padding
+          zoom.style.top = (y) + 'px'; // - 32 corrects mouse position for top padding
           zoom.style.left = (x) + 'px';
           zoom.style.backgroundPosition = ((Ix - x) * ratio + Zw / 2) + 'px ' + ((Iy - y) * ratio + Zh / 2) + 'px';
       }

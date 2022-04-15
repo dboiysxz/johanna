@@ -417,13 +417,13 @@ body {
 }
 
 /* Zoom */
-img {
+/* img {
     display: block;
     margin: 20px auto;
 
     border: 1px solid rgba(255,255,255,0.2);
     -webkit-transition: -webkit-filter 300ms;
-}
+} */
 
 .magnifying-glass {
     position: absolute;
@@ -453,6 +453,10 @@ img {
     width: calc(100% + 4rem);
     margin-left: -2rem;
 } */
+
+.swiper-slide-image {
+    margin: 20px auto;
+}
 
 
 /* --------- MEDIA QUERIES --------- */

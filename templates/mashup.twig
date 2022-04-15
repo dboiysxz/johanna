@@ -1,0 +1,25 @@
+{% extends "index" %}
+
+{% block content %}
+
+{% set images = entry.images.all() %}
+{% if images %}
+<link rel="stylesheet" href="{{ siteUrl }}static/assets/css/lightbox.css"/>
+<link rel="stylesheet" href="{{ siteUrl }}static/assets/css/mashup.css"/>
+<section class="mashup-container">
+
+    {% for image in images %}
+    <div class="mashup-item">
+        <a href="{{ image.url }}" data-lightbox="mashup" data-title="{{ image.title }}">
+            <div class="mashup-window" style="background-image: url('{{ image.getUrl('mashup')}}');">
+                <div class="mashup-overlay"></div>
+            </div>
+        </a>
+    </div>
+    {% endfor %}
+
+</section>
+<script src="{{ siteUrl }}static/assets/js/lightbox-plus-jquery.js"></script>
+
+{% endif %}
+{% endblock %}

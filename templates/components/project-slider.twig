@@ -1,0 +1,28 @@
+{% if projects %}
+<script src="{{ siteUrl }}static/assets/js/magnifying-glass.js" type="text/javascript"></script>
+<section aria-label="Selected Projects" class="swiper-container gallery zoomable-container">
+    <div class="swiper-wrapper carousel">
+
+        {% for project in projects %}
+            {% set image = project.featuredImage.one() ?? project.images.one() %}
+            {% if image %}
+                <div class="swiper-slide slide zoomable">
+                    <div class="magnifying-glass"></div>
+                    <div class="large"></div>
+                    <img class="swiper-slide-image" src="{{ image.getUrl('transform1080p') }}" alt="{{ image.title }}">
+                    <div class="caption">
+                        <p>
+                            <a href="{{ project.url }}">{{ project.title|replace(ALT_FONT_REGEX, ALT_FONT_REPLACE)|raw }}</a>
+                        </p>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+
+    </div>
+
+    <button class="carousel-button carousel-button-left left" data-carousel-button="left"><img src="{{ siteUrl }}static/img/prev.png"></button>
+    <button class="carousel-button carousel-button-right right" data-carousel-button="right"><img src="{{ siteUrl }}static/img/next.png"></button>
+
+</section>
+{% endif %}
