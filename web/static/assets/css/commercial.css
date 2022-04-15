@@ -23,11 +23,9 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 }
 
 body {
-    overflow-x: hidden;
     position: relative;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -38,11 +36,18 @@ body {
     letter-spacing: 1.6;
     /* background: red; */
     color: black;
-    padding: 2rem;
+}
 
+
+#site-container {
+    padding: 1rem 2rem 2rem;
 }
 
 .numbers {
+    font-family: 'Heebo', sans-serif;
+}
+
+.numbers, .alt-font {
     font-family: 'Heebo', sans-serif;
 }
 
@@ -56,6 +61,17 @@ body {
 .title-button a {
     text-decoration: none;
     color: black;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    letter-spacing: 0.05rem;
+}
+
+.nav a:hover {
+    color: #DEFF79;
+    text-decoration: underline;
 }
 
 /* --------- COMMERCIAL PAGE --------- */
@@ -108,4 +124,62 @@ body {
 
 .lb-number {
     display: none;
+}
+.lb-caption {
+    display: none !important;
+}
+
+.spacer-1rem {
+    height: 1rem;
+}
+
+.spacer-2rem {
+    height: 2rem;
+}
+
+/* --------- MEDIA QUERIES --------- */
+
+
+
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    #site-container {
+        padding: 1rem;
+    }
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .grid-item {
+        width: 50%;
+        padding: 1rem;
+    }
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+}
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+
+}
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+    #site-container {
+        padding: 1rem 16px;
+    }
+
+    .nav {
+        font-size: 16px;
+    }
+
+    .grid-item {
+        width: 100%;
+        padding: 0 0 16px;
+    }
 }

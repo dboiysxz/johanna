@@ -1,0 +1,56 @@
+<html lang="en" dir="ltr">
+<head>
+    {% set ALT_FONT_REGEX = '/[(0-9)]+/' %}
+    {% set ALT_FONT_REPLACE = '<span class="alt-font">$0</span>' %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
+    <title>johanna ulfsak</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ siteUrl }}static/assets/css/lightbox.css"/>
+    <link rel="stylesheet" href="{{ siteUrl }}static/assets/css/commercial.css"/>
+    <script src="{{ siteUrl }}static/assets/js/script.js" defer></script>
+</head>
+<body>
+    <div id="site-container">
+        <!-- ------------------------ NAVBAR ---------------------------------- -->
+        <section class="nav">
+                <div class="title-button">
+                    <a href="{{ siteUrl }}">johanna ulfsak</a>
+                </div>
+        </section>
+        <div class="spacer-1rem"></div>
+        {% set images = entry.images.all() %}
+        {% if images %}
+        <section class="grid-container portfolio">
+            <div class="grid-wrapper">
+
+                {% for image in images %}
+                <div class="grid-item">
+                    <a class="grid-item--inner" href="{{ image.url }}" data-lightbox="commercial" data-title="{{ image.title }}">
+                        <div class="grid-overlay"></div>
+                        <div class="portfolio-image" style="background-image: url('{{ image.getUrl('mashup')}}')" alt="{{ image.title }}"></div>
+                        <h2 class="portfolio-title">{{ image.title|replace(ALT_FONT_REGEX, ALT_FONT_REPLACE)|raw  }}</h2>
+                    </a>
+                </div>
+                {% endfor %}
+
+            </div>
+        </section>
+        <script src="{{ siteUrl }}static/assets/js/lightbox-plus-jquery.js"></script>
+        <script>
+            lightbox.option({
+              'disableScrolling': true,
+              'alwaysShowNavOnTouchDevices': true,
+              'wrapAround': true
+            })
+        </script>
+        {% endif %}
+    </div>
+</body>
+</html>
