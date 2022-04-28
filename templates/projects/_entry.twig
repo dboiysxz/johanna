@@ -10,10 +10,10 @@
     <section id="about" class="project-overview">
         <div class="main">
             <h1 class="project-title">
-                {{ entry.title|replace(ALT_FONT_REGEX, ALT_FONT_REPLACE)|raw  }}
+                {{ entry.title }}
             </h1>
             <p>
-                {{ entry.projectDescription|replace(ALT_FONT_REGEX, ALT_FONT_REPLACE)|raw  }}
+                {{ entry.projectDescription }}
             </p>
         </div>
 
@@ -30,10 +30,10 @@
                 {% for tag in tags %}
                 <div class="tag-row">
                     <div class="tag-title">
-                        {{ tag.tag|replace(ALT_FONT_REGEX, ALT_FONT_REPLACE)|raw }}
+                        {{ tag.tag}}
                     </div>
                     <div class="tag-content">
-                        {{ tag.tagDescription|replace(ALT_FONT_REGEX, ALT_FONT_REPLACE)|raw }}
+                        {{ tag.tagDescription}}
                     </div>
                 </div>
                 {% endfor %}

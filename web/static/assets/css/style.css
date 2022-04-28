@@ -8,6 +8,32 @@
     src:  url('../fonts/MinionPro-Regular.woff') format('woff');
 }
 
+/* hebrew */
+@font-face {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/heebo/v19/NGSpv5_NC0k9P_v6ZUCbLRAHxK1E1yysd0mg7UiCXB5WkK8.woff) format('woff');
+  unicode-range: U+30-39;
+
+}
+/* latin */
+@font-face {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/heebo/v19/NGSpv5_NC0k9P_v6ZUCbLRAHxK1E1yysdUmg7UiCXB5W.woff) format('woff');
+  unicode-range: U+30-39;
+}
+/*
+@font-face {
+    font-family: "MinionPro-Regular";
+      src:  url('../fonts/MinionPro-Regular.woff') format('woff');
+      unicode-range: U+30-39;
+} */
+
 *,
 *::before,
 *::after {
@@ -31,7 +57,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: none;
     font-size: 1.2rem;
-    font-family: "Ang-Regular", Arial, sans-serif;
+    font-family: "Heebo", "Ang-Regular", Arial, sans-serif;
     font-weight: Regular;
     letter-spacing: 0.05rem;
     /* background: red; */
@@ -297,8 +323,9 @@ body {
 .main p {
     margin-bottom: 1.5rem;
     /* TODO: MAYBE REMOVE */
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     letter-spacing: 0.1rem;
+    line-height: 1.5rem;
 }
 
 .main a,
@@ -368,7 +395,8 @@ body {
     width: 77%;
 } */
 
-.tags p {
+.tags p,
+.caption p {
     font-size: 1rem;
     letter-spacing: 0.05rem;
 }
@@ -411,7 +439,7 @@ body {
 }
 
 .project-title {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: normal;
     letter-spacing: 0.1rem;
 }

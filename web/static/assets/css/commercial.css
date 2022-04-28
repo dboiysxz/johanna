@@ -8,6 +8,25 @@
     src:  url('../fonts/MinionPro-Regular.woff') format('woff');
 }
 
+/* hebrew */
+@font-face {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/heebo/v19/NGSpv5_NC0k9P_v6ZUCbLRAHxK1E1yysd0mg7UiCXB5WkK8.woff) format('woff');
+  unicode-range: U+30-39;
+}
+/* latin */
+@font-face {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/heebo/v19/NGSpv5_NC0k9P_v6ZUCbLRAHxK1E1yysdUmg7UiCXB5W.woff) format('woff');
+  unicode-range: U+30-39;
+}
+
 *,
 *::before,
 *::after {

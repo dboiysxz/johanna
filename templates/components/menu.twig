@@ -2,10 +2,10 @@
 <section class="nav">
     <div class="navbar">
         <div class="item1">
-            <a href="{{ siteUrl }}mashup">mashup</a>
+            <a href="{{ siteUrl }}mashup">johanna ulfsak</a>
         </div>
         <div class="item2">
-            <a href="{{ siteUrl }}#about">johanna ulfsak</a>
+            <a href="{{ siteUrl }}#about">about</a>
         </div>
         <div class="item3 index-subnav-toggle">
             <a class="">index</a>
@@ -23,13 +23,13 @@
         <div class=project-items>
             <div class="year">
                 {% if link.navigationExtra %}
-                <p>{{ link.navigationExtra|replace(ALT_FONT_REGEX, ALT_FONT_REPLACE)|raw }}</p>
+                <p>{{ link.navigationExtra }}</p>
                 {% endif %}
             </div>
             <div class="title">
                 {% set destination = link.navigationDestination.one() %}
                 <a href="{{ destination.url }}">
-                    <p class="letters">{{ link.navigationTitle|replace(ALT_FONT_REGEX, ALT_FONT_REPLACE)|raw }}</p>
+                    <p class="letters">{{ link.navigationTitle }}</p>
                 </a>
             </div>
         </div>
