@@ -492,6 +492,81 @@ body {
 }
 
 
+/* --------- MASU --------- */
+
+/* .masu-container {
+    max-width: 1200px;
+    margin: 0 auto;
+} */
+
+.masu-items-wrapper {
+    margin: 0 auto;
+    width: 100%;
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.masu-item {
+    max-height: 100%;
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background: white;
+    margin: 3px;
+    position: relative;
+
+}
+
+/* .masu-overlay {
+    position: absolute;
+    height: 70%;
+    width: 70%;
+    top: 0;
+    left: 0;
+    flex-grow: 1;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 5;
+    opacity: 1;
+} */
+.masu-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.masu-img:hover {
+    /* filter: grayscale(1); */
+    filter: grayscale(100%) brightness(80%) sepia(300%) hue-rotate(50deg) saturate(500%);
+    opacity: 0.5;
+    
+}
+
+.masu-overlay {
+  position: absolute;
+  top: 0px;
+  left: 75px;
+  opacity: 0;
+  transition: opacity .5s ease-in;
+}
+
+.masu-overlay h1,
+.masu-overlay p {
+  margin: 0;
+}
+
+.masu-img:hover + .masu-overlay {
+  opacity: 1;
+}
+
+.specificLocation {
+  margin-left: 100px;
+}
+
+
 /* --------- MEDIA QUERIES --------- */
 
 
