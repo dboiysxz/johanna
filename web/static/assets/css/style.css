@@ -291,7 +291,13 @@ body {
 }
 
 .letters {
-    margin-top: 0.2rem;
+    margin: 0.2rem 2rem 0 0;
+    text-align: right;
+}
+
+.index-year {
+    margin: 0.2rem 0 0 2rem;
+    text-align: left;
 }
 
 .projects a {
@@ -510,7 +516,7 @@ body {
 
 .masu-item {
     max-height: 100%;
-    width: 20rem;
+    max-width: 40rem;
     display: flex;
     align-items: center;
     text-align: center;
@@ -536,13 +542,21 @@ body {
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
+    --mask:
+      linear-gradient(#000 0 0) center/calc(100% - 30px) calc(100% - 30px) no-repeat,
+      conic-gradient(from 135deg at top,#0000,#000 1deg 89deg,#0000 90deg) 0 0/30px 15px space no-repeat,
+      conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 0 100%/30px 15px space no-repeat,
+      conic-gradient(from 45deg at left,#0000,#000 1deg 89deg,#0000 90deg) 0 0/15px 30px no-repeat space,
+      conic-gradient(from -135deg at right,#0000,#000 1deg 89deg,#0000 90deg) 100% 0/15px 30px no-repeat space;
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
 }
 
 .masu-img:hover {
     /* filter: grayscale(1); */
     filter: grayscale(100%) brightness(80%) sepia(300%) hue-rotate(50deg) saturate(500%);
     opacity: 0.5;
-    
+
 }
 
 .masu-overlay {
