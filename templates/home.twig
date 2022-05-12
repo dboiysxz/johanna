@@ -10,30 +10,6 @@
     projects: projects
 } %}
 
-<!-- ---------------------------- ABOUT ----------------------------- -->
 
-<section  >
-  <div id="about" class="main project-overview">
-
-      <p>{{entry.about }}</p>
-
-      <div class="spacer-1rem"></div>
-      <div class="exhibitions general-content">
-
-        {% set resumeItems = entry.resume.all() %}
-        {% if resumeItems %}
-        <p>
-        SELECTED PROJECTS & EXHIBITIONS <br><br>
-            {% for item in resumeItems %}
-            <span class="resume-items-list-item">
-                <span class="numbers">{{ item.year }}</span> {{ item.projectName }}<br />
-            </span>
-            {% endfor %}
-        </p>
-        {% endif %}
-      </div>
-  </div>
-
-</section>
 
 {% endblock %}

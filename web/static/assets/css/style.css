@@ -49,6 +49,7 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+
 }
 
 body {
@@ -60,8 +61,19 @@ body {
     font-family: "Heebo", "Ang-Regular", Arial, sans-serif;
     font-weight: Regular;
     letter-spacing: 0.05rem;
+
     /* background: red; */
+    /* color: black; */
+}
+
+.main a {
     color: black;
+
+}
+
+.main a:hover {
+    color: #DEFF79;
+    text-decoration: underline;
 }
 
 #site-container {
@@ -194,6 +206,11 @@ body {
     /* background: yellow; */
 }
 
+.caption a:hover {
+    color: #DEFF79;
+    text-decoration: underline;
+}
+
 .carousel-button {
     position: absolute;
     z-index: 2;
@@ -306,6 +323,11 @@ body {
     letter-spacing: 0.05rem;
 }
 
+.projects a:hover {
+    color: #DEFF79;
+    text-decoration: underline;
+}
+
 /* --------- ABOUT --------- */
 /* .resume {
     margin: 5rem 0 0 2rem;
@@ -322,6 +344,14 @@ body {
     margin-left: 5rem;
 }
 
+.main a {
+    color: black;
+}
+.main a:hover,  {
+    color: #DEFF79;
+    text-decoration: underline;
+}
+
 .about p {
     letter-spacing: 0.05rem;
 }
@@ -331,13 +361,10 @@ body {
     /* TODO: MAYBE REMOVE */
     font-size: 1.2rem;
     letter-spacing: 0.1rem;
-    line-height: 1.5rem;
+    line-height: 2rem;
 }
 
-.main a,
-.main a:hover, .main a:visited {
-    color: black;
-}
+
 
 .exhibitions p {
     font-size: 1rem;
@@ -350,6 +377,10 @@ body {
     padding-bottom: 5rem;
     max-width: 991.98px;
     margin: 0 auto;
+}
+
+figure img {
+    max-width: 100%;
 }
 
 .tags-container {
@@ -516,7 +547,7 @@ body {
 
 .masu-item {
     max-height: 100%;
-    max-width: 40rem;
+    max-width: 30rem;
     display: flex;
     align-items: center;
     text-align: center;
@@ -541,7 +572,7 @@ body {
 .masu-img {
     max-width: 100%;
     max-height: 100%;
-    object-fit: cover;
+    /* object-fit: cover;
     --mask:
       linear-gradient(#000 0 0) center/calc(100% - 30px) calc(100% - 30px) no-repeat,
       conic-gradient(from 135deg at top,#0000,#000 1deg 89deg,#0000 90deg) 0 0/30px 15px space no-repeat,
@@ -549,12 +580,12 @@ body {
       conic-gradient(from 45deg at left,#0000,#000 1deg 89deg,#0000 90deg) 0 0/15px 30px no-repeat space,
       conic-gradient(from -135deg at right,#0000,#000 1deg 89deg,#0000 90deg) 100% 0/15px 30px no-repeat space;
     -webkit-mask: var(--mask);
-            mask: var(--mask);
+            mask: var(--mask); */
 }
 
 .masu-img:hover {
     /* filter: grayscale(1); */
-    filter: grayscale(100%) brightness(80%) sepia(300%) hue-rotate(50deg) saturate(500%);
+    filter: grayscale(100%) brightness(80%) sepia(300%) hue-rotate(25deg) saturate(500%);
     opacity: 0.5;
 
 }
@@ -574,10 +605,6 @@ body {
 
 .masu-img:hover + .masu-overlay {
   opacity: 1;
-}
-
-.specificLocation {
-  margin-left: 100px;
 }
 
 

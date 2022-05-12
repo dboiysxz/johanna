@@ -1,0 +1,72 @@
+{% extends "index" %}
+
+{% block content %}
+
+<!-- ---------------------------- ABOUT ----------------------------- -->
+
+<section  >
+  <div id="about" class="main project-overview">
+
+      <p>{{entry.about }}</p>
+
+      <div class="spacer-1rem"></div>
+      <div class="exhibitions general-content">
+
+        {% set resumeItems = entry.resume.all() %}
+        {% if resumeItems %}
+        <p>
+        SELECTED PROJECTS & EXHIBITIONS <br>
+            {% for item in resumeItems %}
+            <span class="resume-items-list-item">
+                <span class="numbers">{{ item.year }}</span> {{ item.projectName }}<br />
+            </span>
+            {% endfor %}
+        </p>
+        {% endif %}
+
+        {% set awardsItems = entry.awards.all() %}
+        {% if awardsItems %}
+        <p>
+            <br>
+        AWARDS AND MENTIONS <br>
+            {% for item in awardsItems %}
+            <span class="resume-items-list-item">
+                <span class="numbers">{{ item.year }}</span> {{ item.awardName }}<br />
+            </span>
+            {% endfor %}
+        </p>
+        {% endif %}
+
+
+        {% set articleItems = entry.articles.all() %}
+        {% if articleItems %}
+        <p>
+            <br>
+        ARTICLES AND INTERVIEWS <br>
+            {% for item in articleItems %}
+            <span class="resume-items-list-item">
+                <span class="numbers">{{ item.year }}</span> {{ item.articleName }}<br />
+            </span>
+            {% endfor %}
+        </p>
+        {% endif %}
+
+
+        {% set educationItems = entry.education.all() %}
+        {% if educationItems %}
+        <p>
+            <br>
+        EDUCATION <br>
+            {% for item in educationItems %}
+            <span class="resume-items-list-item">
+                <span class="numbers">{{ item.year }}</span> {{ item.educationName }}<br />
+            </span>
+            {% endfor %}
+        </p>
+        {% endif %}
+      </div>
+  </div>
+
+</section>
+
+{% endblock %}

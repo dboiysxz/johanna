@@ -27,7 +27,7 @@
                 <a class="grid-item--inner" href="img/Carpet 1_jpeg.jpg" data-lightbox="carpet image :)" data-title="Caption1">
                     <div class="grid-overlay"></div>
                     <div class="portfolio-image" style="background-image: url('img/_DSD9279.jpg')" alt="_DSD9279"></div>
-                    <h2 class="portfolio-title">Hand-spun Himalayan wool, silk</h2>
+                    <h2 class="portfolio-title numbers">Hand-spun Himalayan wool, silk</h2>
                 </a>
             </div>
             <div class="grid-item">
