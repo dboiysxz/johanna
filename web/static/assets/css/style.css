@@ -324,7 +324,7 @@ body {
 }
 
 .projects a:hover {
-    color: #DEFF79;
+    color: black;
     text-decoration: underline;
 }
 

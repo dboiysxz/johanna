@@ -28,7 +28,7 @@
             </div>
             <div class="title">
                 {% set destination = link.navigationDestination.one() %}
-                <a href="{{ destination.url }}">
+                <a class="navlink" href="{{ destination.url }}">
                     <p class="letters">{{ link.navigationTitle }}</p>
                 </a>
             </div>
